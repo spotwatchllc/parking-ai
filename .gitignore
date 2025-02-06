@@ -1,0 +1,16 @@
+# Ignore virtual environment directories
+venv/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging directories
+build/
+dist/
+*.egg-info/
+OIDv4_Toolkit
+
+# Other common files (customize as needed)
+*.log
