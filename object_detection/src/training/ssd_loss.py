@@ -31,15 +31,10 @@ def focal_loss(y_true: tf.Tensor, y_pred: tf.Tensor, alpha: float = 0.25, gamma:
     y_pred = tf.clip_by_value(y_pred, epsilon, 1. - epsilon)
 
     # Compute the cross-entropy loss
-    y_true_expanded = tf.broadcast_to(y_true, tf.shape(y_pred))
-    cross_entropy = -y_true_expanded * tf.math.log(y_pred)
+    cross_entropy = -y_true * tf.math.log(y_pred)
 
     # Compute the focal loss
     loss = alpha * tf.math.pow(1 - y_pred, gamma) * cross_entropy
-
-    # Check if y_true and y_pred shapes match
-    if y_true.shape[-1] != y_pred.shape[-1]:
-        raise ValueError(f"Shape mismatch: y_true has {y_true.shape[-1]} classes, but y_pred has {y_pred.shape[-1]} classes.")
 
     # Sum the focal loss across all boxes
     return tf.math.reduce_sum(loss, axis=-1)
