@@ -228,6 +228,7 @@ def num_labels_above_cutoff(dataset_path : str=None,
 
 def num_labels_above_percentage(dataset_path : str=None, 
                                 target_percentage : float=0.0) -> int:
+    num_empty_txt = 0  # Initialize here
     """
     Calculates the maximum number of detections in the input images corresponding to the max percentage 
     of the dataset to be filtered by removing images with a lot a detections

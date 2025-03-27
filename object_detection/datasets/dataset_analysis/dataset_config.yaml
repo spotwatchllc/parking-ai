@@ -1,6 +1,6 @@
 dataset:
-  dataset_name: Pascal_VOC_2007
-  dataset_path: ../<dataset_name>/
+  dataset_name: pklot_dataset
+  dataset_path: ../pklot_dataset/test
 
 settings:
   max_detections: 40
