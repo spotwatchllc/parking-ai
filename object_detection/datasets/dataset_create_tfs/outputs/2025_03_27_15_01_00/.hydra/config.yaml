@@ -1,0 +1,7 @@
+dataset:
+  dataset_name: pklot_dataset
+  training_path: ../pklot_dataset/train/
+  validation_path: ../pklot_dataset/valid/
+  test_path: ../pklot_dataset/test/
+settings:
+  max_detections: 40

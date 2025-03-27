@@ -1,0 +1,6 @@
+dataset:
+  dataset_name: pklot_dataset
+  dataset_path: ../pklot_dataset/valid
+settings:
+  max_detections: 40
+  max_percentage_filtered: 1

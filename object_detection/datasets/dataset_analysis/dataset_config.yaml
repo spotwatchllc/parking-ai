@@ -1,6 +1,6 @@
 dataset:
   dataset_name: pklot_dataset
-  dataset_path: ../pklot_dataset/test
+  dataset_path: ../pklot_dataset/train
 
 settings:
   max_detections: 40

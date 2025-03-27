@@ -1,11 +1,11 @@
 dataset:
   dataset_name: pklot_dataset
-  training_path: ../pklot_dataset/train
-  validation_path: ../pklot_dataset/valid
-  test_path: ../pklot_dataset/test
+  training_path: ../pklot_dataset/train/
+  validation_path: ../pklot_dataset/valid/
+  test_path: ../pklot_dataset/test/
 
 settings:
-  max_detections: 20
+  max_detections: 40
   
 hydra:
   run:

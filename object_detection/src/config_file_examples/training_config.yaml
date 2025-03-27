@@ -24,7 +24,7 @@ preprocessing:
     scale: 1/127.5
     offset: -1
   resizing:
-    interpolation: bilinear
+    interpolation: nearest
     aspect_ratio: fit
   color_mode: rgb
 
@@ -43,9 +43,9 @@ data_augmentation:
 
 training:
   model:
-    alpha: 1.0
+    alpha: .35
     input_shape: (192, 192, 3)
-    pretrained_weights: None
+    pretrained_weights: imagenet
   dropout:
   batch_size: 16
   epochs: 200
@@ -61,9 +61,9 @@ training:
       patience: 40
 
 postprocessing:
-  confidence_thresh: 0.6
+  confidence_thresh: 0.3
   NMS_thresh: 0.5
-  IoU_eval_thresh: 0.3
+  IoU_eval_thresh: 0.5
   plot_metrics: True   # Plot precision versus recall curves. Default is False.
   max_detection_boxes: 10
   
