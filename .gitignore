@@ -14,3 +14,5 @@ OIDv4_Toolkit
 
 # Other common files (customize as needed)
 *.log
+
+object_detection/datasets
