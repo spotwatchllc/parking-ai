@@ -15,4 +15,5 @@ OIDv4_Toolkit
 # Other common files (customize as needed)
 *.log
 
-/object_detection/datasets/
+# dont track the dataset on cars
+/object_detection/datasets/PKLot.v1-raw.darknet
