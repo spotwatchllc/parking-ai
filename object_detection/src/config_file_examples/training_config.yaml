@@ -48,7 +48,7 @@ training:
     pretrained_weights: imagenet
   dropout:
   batch_size: 10
-  epochs: 200
+  epochs: 100
   optimizer:
     Adam:
       learning_rate: 0.001
