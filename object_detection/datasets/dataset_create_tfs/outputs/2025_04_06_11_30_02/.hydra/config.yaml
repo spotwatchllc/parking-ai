@@ -3,10 +3,5 @@ dataset:
   training_path: ../pklot_dataset/train/
   validation_path: ../pklot_dataset/valid/
   test_path: ../pklot_dataset/test/
-
 settings:
   max_detections: 100
-  
-hydra:
-  run:
-    dir: outputs/${now:%Y_%m_%d_%H_%M_%S}
