@@ -44,14 +44,14 @@ data_augmentation:
 training:
   model:
     alpha: .35
-    input_shape: (192, 192, 3)
+    input_shape: (416, 416, 3)
     pretrained_weights: imagenet
   dropout:
   batch_size: 16
   epochs: 200
   optimizer:
     Adam:
-      learning_rate: 0.001
+      learning_rate: 0.015
   callbacks:
     ReduceLROnPlateau:
       monitor: val_loss
