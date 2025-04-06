@@ -1,0 +1,15 @@
+artifact_uri: /home/katkat/parking-ai/object_detection/src/experiments_outputs/mlruns/710261808888090283/9f6927cd595d4b26b03cd086ebe77157/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '710261808888090283'
+lifecycle_stage: active
+run_id: 9f6927cd595d4b26b03cd086ebe77157
+run_name: '2025_04_06_11_30_54'
+run_uuid: 9f6927cd595d4b26b03cd086ebe77157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1743953456006
+status: 1
+tags: []
+user_id: katkat

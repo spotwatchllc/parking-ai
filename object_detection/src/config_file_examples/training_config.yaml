@@ -44,7 +44,7 @@ data_augmentation:
 training:
   model:
     alpha: .35
-    input_shape: (192, 192, 3)
+    input_shape: (416, 416, 3)
     pretrained_weights: imagenet
   dropout:
   batch_size: 16
@@ -61,7 +61,7 @@ training:
       patience: 40
 
 postprocessing:
-  confidence_thresh: 0.3
+  confidence_thresh: 0.5
   NMS_thresh: 0.5
   IoU_eval_thresh: 0.5
   plot_metrics: True   # Plot precision versus recall curves. Default is False.

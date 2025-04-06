@@ -1,0 +1,25 @@
+general:
+  model_path: experiments_outputs/2025_03_27_15_02_56/saved_models/best_weights.h5
+  model_type: ssd_mobilenet_v2_fpnlite
+operation_mode: evaluation
+dataset:
+  class_names:
+  - space-empty
+  - space-occupied
+  test_path: ../datasets/pklot_dataset/test
+preprocessing:
+  rescaling:
+    scale: 1/127.5
+    offset: -1
+  resizing:
+    aspect_ratio: fit
+    interpolation: nearest
+  color_mode: rgb
+postprocessing:
+  confidence_thresh: 0.6
+  NMS_thresh: 0.5
+  IoU_eval_thresh: 0.3
+  plot_metrics: true
+  max_detection_boxes: 10
+mlflow:
+  uri: ./experiments_outputs/mlruns
