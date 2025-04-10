@@ -5,7 +5,7 @@ dataset:
   test_path: ../pklot_dataset/test/
 
 settings:
-  max_detections: 100
+  max_detections: 40
   
 hydra:
   run:
