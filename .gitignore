@@ -16,4 +16,4 @@ OIDv4_Toolkit
 *.log
 
 # dont track the dataset on cars
-/object_detection/datasets/pklot_dataset
+#/object_detection/datasets/pklot_dataset
